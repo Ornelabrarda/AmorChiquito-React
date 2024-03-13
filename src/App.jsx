@@ -1,3 +1,4 @@
+import 'bootstrap/dist/css/bootstrap.min.css';
 import "../src/App.css";
 import { Header } from "./components/Header/Header";
 import { NavBar } from "./components/Navbar/NavBar";
@@ -9,7 +10,7 @@ function App() {
       <div className="App">
         <Header title="Amor chiquito"/>
         <NavBar/>
-        <ItemListContainer subtitle="Greetings for everybody!"/>
+        <ItemListContainer greetings="Indumentaria para bebés"/>
       </div>
   )
 }
