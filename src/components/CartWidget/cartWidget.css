@@ -1,8 +1,8 @@
 .cartWidget {
     font-size: 20px;
     font-family: "Varela Round", sans-serif;
-    font-weight: bold;
-    color: rgb(252, 248, 232);   
+    color: rgb(252, 248, 232);
+    display: flex;
 }
 
 
