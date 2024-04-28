@@ -1,0 +1,32 @@
+.item-count {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Kalam, cursive;
+    font-size: 1.5rem;
+}
+
+.item-count button {
+    width: 2rem;
+    height: 2rem;
+    background-color: antiquewhite;
+    font-family: helevetica;
+    border-color: rgb(236, 179, 144);
+    border-radius: 0.5rem;
+    font-weight: bold;
+    margin-bottom: 0.7rem;
+
+}
+
+.agregar-al-carrito {
+    font-family: Kalam, cursive;
+    font-size: 1.5rem;
+    color: black;
+    border-color: rgb(236, 179, 144);
+    background-color:antiquewhite;
+    border-radius: 0.5rem;
+    
+}
+
+
+ 

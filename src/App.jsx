@@ -1,17 +1,16 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import 'bootstrap/dist/css/bootstrap.min.css';
-import "../src/App.css";
 import { Header } from "./components/Header/Header";
 import NavBar from "./components/Navbar/NavBar";
 import { ItemListContainer } from "./components/itemListContainer/ItemListContainer";
-import { ItemDetailContainer } from "./components/itemDetailContainer";
-
+import { ItemDetailContainer } from "./components/ItemDetailContainer/itemDetailContainer";
+import "bootstrap/dist/css/bootstrap.min.css";
+import "../src/App.css";
 
 function App() {
   return (
     <BrowserRouter>
-        <Header title="Amor chiquito"/>
-        <NavBar/>
+      <Header title="Amor chiquito" />
+      <NavBar />
       <Routes>
         <Route path="/" element={<ItemListContainer />}></Route>
         <Route path="/category/:id" element={<ItemListContainer />}></Route>
@@ -19,7 +18,7 @@ function App() {
         <Route path="/*" element={404}></Route>
       </Routes>
     </BrowserRouter>
-  )
+  );
 }
 
 export default App;

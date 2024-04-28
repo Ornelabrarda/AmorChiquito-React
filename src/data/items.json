@@ -5,7 +5,8 @@
         "description":"Vestido blanco con estampa y volados",
         "price":"$1.18",
         "pictureUrl":"../src/assets/img/vestido1.webp",
-        "category":"Vestidos"
+        "category":"Vestidos",
+        "stock":10
     },
 
     {   "id":2,
@@ -13,7 +14,8 @@
         "description":"Nunc rhoncus dui vel sem. Sed sagittis. Nam congue, risus semper porta volutpat, quam pede lobortis ligula, sit amet",
         "price":"$4.33",
         "pictureUrl":"../src/assets/img/vestido2.webp",
-        "category":"Vestidos"
+        "category":"Vestidos",
+        "stock":15
     },
     
     {   "id":3,
@@ -21,7 +23,8 @@
         "description":"Phasellus id sapien in sapien iaculis congue. Vivamus metus arcu, adipiscing molestie, hendrerit at, vulputate vitae",
         "price":"$7.80",
         "pictureUrl":"../src/assets/img/vestido3.webp",
-        "category":"Vestidos"
+        "category":"Vestidos",
+        "stock":8
     },
 
     {   "id":4,
@@ -29,7 +32,8 @@
         "description":"Mauris lacinia sapien quis libero tortor quis turpis. Sed ante. Vivamus tortor. Duis mattis egestas metu.",
         "price":"$6.28",
         "pictureUrl":"../src/assets/img/vestido4.webp",
-        "category":"Vestidos"
+        "category":"Vestidos",
+        "stock":12
     },
     
     {   "id":5,
@@ -37,7 +41,8 @@
         "description":"Mauris sit amet eros. Suspendisse accumsan tortor quis turpis. Sed ante. Vivamus tortor. Duis mattis egestas metus.",
         "price":"$2.82",
         "pictureUrl":"../src/assets/img/vestido5.webp",
-        "category":"Vestidos"
+        "category":"Vestidos",
+        "stock":5
     },
 
     {   "id":6,
@@ -45,7 +50,8 @@
         "description":"Quisque arcu libero, rutrum ac, lobortis vel, dapibus at, diam tortor quis turpis. Sed ante. Vivamus tortor. Duis mattis.",
         "price":"$0.26",
         "pictureUrl":"../src/assets/img/vestido6.webp",
-        "category":"Vestidos"
+        "category":"Vestidos",
+        "stock":6
     },
     
     {   "id":7,
@@ -53,7 +59,8 @@
         "description":"Aenean lectus. Pellentesque eget nunc. Donec quis orci eget orci vehicula condimentum. Curabitur in libero ut massa.",
         "price":"$4.60",
         "pictureUrl":"../src/assets/img/vestido7.webp",
-        "category":"Vestidos"
+        "category":"Vestidos",
+        "stock":9
     },
     
     {   "id":8,
@@ -61,7 +68,8 @@
         "description":"Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Proin interdum mauris non ligula pellentesque ultrices myside.",
         "price":"$9.37",
         "pictureUrl": "../src/assets/img/vestido8.webp",
-        "category":"Vestidos"
+        "category":"Vestidos",
+        "stock":4
     },
     
     {   "id":9,
@@ -69,7 +77,8 @@
         "description":"Maecenas tristique, est et tempus semper, est quam pharetra magna, ac consequat metus sapien ut nunc. Vestibulum ante ipsum.",
         "price":"$4.54",
         "pictureUrl":"../src/assets/img/vestido9.webp",
-        "category":"Vestidos"
+        "category":"Vestidos",
+        "stock":4
     },
 
     {   "id":10,
@@ -77,7 +86,8 @@
         "description":"Nunc purus. Phasellus in felis. Donec semper sapien a libero. Nam dui. Proin leo odio, porttitor id, consequat in, consequat.",
         "price":"$8.04",
         "pictureUrl":"../src/assets/img/remera niña1.webp",
-        "category":"Remeras"
+        "category":"Remeras",
+        "stock":8
     },
     
     {   "id":11,   
@@ -85,7 +95,8 @@
         "description":"Morbi sem mauris, laoreet ut, rhoncus aliquet, pulvinar sed, nisl. Nunc rhoncus dui vel sem. Sed sagittis. Nam congue, risus.",
         "price":"$8.05",
         "pictureUrl":"../src/assets/img/remera niña2.webp",
-        "category":"Remeras"
+        "category":"Remeras",
+        "stock":4
     },
 
     {   "id":12,   
@@ -93,7 +104,9 @@
         "description":"Duis bibendum, felis sed interdum venenatis, turpis enim blandit mi, in porttitor pede justo eu massa. Donec dapibus.",
         "price":"$1.40",
         "pictureUrl":"../src/assets/img/remera niño.webp",
-        "category":"Remeras"
+        "category":"Remeras",
+        "stock":8
+
     },
 
     {   "id":13,
@@ -101,7 +114,8 @@
         "description":"Curabitur gravida nisi at nibh. In hac habitasse platea dictumst. Aliquam augue quam, sollicitudin vitae, consectetuer eget.",
         "price":"$4.63",
         "pictureUrl":"../src/assets/img/pantalon niña.webp",
-        "category":"Pantalones"
+        "category":"Pantalones",
+        "stock":4
     },
     
     {   "id":14,
@@ -109,7 +123,8 @@
         "description":"Morbi ut odio. Cras mi pede, malesuada in, imperdiet et, commodo vulputate, justo. In blandit ultrices enim. Lorem ipsum.",
         "price":"$8.71",
         "pictureUrl":"../src/assets/img/pantalon niña2.webp",
-        "category":"Pantalones"
+        "category":"Pantalones",
+        "stock":12
     },
 
     {   "id":15,
@@ -117,7 +132,8 @@
         "description":"Mauris lacinia sapien quis libero. Nullam sit amet turpis elementum ligula vehicula consequat. Morbi a ipsum.",
         "price":"$8.56",
         "pictureUrl":"../src/assets/img/pantalon.webp",
-        "category":"Pantalones"
+        "category":"Pantalones",
+        "stock":4
     },
 
     {   "id":16,
@@ -125,7 +141,8 @@
         "description":"Integer ac neque. Duis bibendum. Morbi non quam nec dui luctus rutrum. Nulla tellus. In sagittis dui vel nisl. Duis ac nibh.",
         "price":"$9.62",
         "pictureUrl":"../src/assets/img/pantalon niño1.webp",
-        "category":"Pantalones"
+        "category":"Pantalones",
+        "stock":5
     },
 
     {   "id":17,
@@ -133,7 +150,8 @@
         "description":"Phasellus in felis Duis faucibus accumsan odio Morbi non quam nec dui luctus rutrum. Nulla tellus.",
         "price":"$6.85",
         "pictureUrl":"../src/assets/img/pantalon niño2.webp",
-        "category":"Pantalones"
+        "category":"Pantalones",
+        "stock":6
     },
 
     {   "id":18,
@@ -141,7 +159,8 @@
         "description":"Integer non velit. Donec diam neque, vestibulum eget, vulputate ut, ultrices vel, augue. Vestibulum.",
         "price":"$4.67",
         "pictureUrl":"../src/assets/img/pantalon niño3.webp",
-        "category":"Pantalones"
+        "category":"Pantalones",
+        "stock":9
     },
 
     {   "id":19,
@@ -149,7 +168,8 @@
         "description":"Quisque erat eros, viverra eget, congue eget, semper rutrum, nulla. Nunc purus. Phasellus in felis..",
         "price":"$6.16",
         "pictureUrl":"../src/assets/img/pantalon niño4.webp",
-        "category":"Pantalones"
+        "category":"Pantalones",
+        "stock":6
     },
 
     {   "id":20,
@@ -157,7 +177,8 @@
         "description":"Sed accumsan felis. Ut at dolor quis odio consequat varius. Integer ac leo. Pellentesque ultrices mattis.",
         "price":"$2.21",
         "pictureUrl":"../src/assets/img/pantalon niño5.webp",
-        "category":"Pantalones"
+        "category":"Pantalones",
+        "stock":5
     },
 
     {   "id":21,
@@ -165,7 +186,8 @@
         "description":"Nulla ac enim. In tempor, turpis nec euismod scelerisque, quam turpis adipiscing lorem, vitae mattis nibh.",
         "price":"$1.97",
         "pictureUrl":"../src/assets/img/zapatillas1.webp",
-        "category":"Zapatillas"
+        "category":"Zapatillas",
+        "stock":6
     },
 
     {   "id":22,
@@ -173,7 +195,8 @@
         "description":"Aenean lectus. Pellentesque eget nunc. Donec quis orci eget orci vehicula condimentum. Curabitur in.Morbi posuere cubilia Curae; Duis faucibus. ",
         "price":"$8.83",
         "pictureUrl":"../src/assets/img/zapatillas2.webp",
-        "category":"Zapatillas"
+        "category":"Zapatillas",
+        "stock":7
     },
     
     {   "id":23,
@@ -181,7 +204,8 @@
         "description":"Vestibulum ante ipsum primis in faucibus orci.",
         "price":"$7.96",
         "pictureUrl":"../src/assets/img/zapatillas3.webp",
-        "category":"Zapatillas"
+        "category":"Zapatillas",
+        "stock":6
     },
 
     {   "id":24,
@@ -189,7 +213,8 @@
         "description":"Pellentesque at nulla. Suspendisse potenti. Cras in purus eu magna vulputate luctus. Duis faucibus. posuere cubilia Curae; Duis faucibus. urabitur in.Morbi posuere cubilia Curae; Duis faucibus. at nulla. Suspendisse potenti.",
         "price":"$3.85",
         "pictureUrl":"../src/assets/img/accesorios.webp",
-        "category":"Accesorios"
+        "category":"Accesorios",
+        "stock":8
     },
 
     {   "id":25,
@@ -197,7 +222,8 @@
         "description":"Phasellus in felis. Donec semper sapien a libero. Duis faucibus accumsan odio Duis faucibus accumsan. at nulla. Suspendisse potenti.c",
         "price":"$8.67",
         "pictureUrl":"../src/assets/img/Gorro.webp",
-        "category":"Accesorios"
+        "category":"Accesorios",
+        "stock":9
     },
 
     {   "id":26,
@@ -205,7 +231,8 @@
         "description":"Curabitur at ipsum ac tellus semper",
         "price":"$9.44",
         "pictureUrl":"../src/assets/img/vincha.webp",
-        "category":"Accesorios"
+        "category":"Accesorios",
+        "stock":5
     },
 
     {   "id":27,
@@ -213,6 +240,7 @@
         "description":"In eleifend quam a odio. In hac habitasse platea dictumst. Maecenas ut massa quis augue luctus tincidunt Duis. at nulla. Suspendisse potenti.",
         "price":"$6.83",
         "pictureUrl":"../src/assets/img/manta.webp",
-        "category":"Accesorios"
+        "category":"Accesorios",
+        "stock":6
     }
 ]
