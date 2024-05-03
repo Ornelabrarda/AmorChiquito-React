@@ -5,19 +5,24 @@ import { ItemListContainer } from "./components/itemListContainer/ItemListContai
 import { ItemDetailContainer } from "./components/ItemDetailContainer/itemDetailContainer";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "../src/App.css";
+import { CartProvider } from "./context/cartContext";
+import { Checkout } from "./components/Checkout/checkout";
 
 function App() {
   return (
-    <BrowserRouter>
-      <Header title="Amor chiquito" />
-      <NavBar />
-      <Routes>
-        <Route path="/" element={<ItemListContainer />}></Route>
-        <Route path="/category/:id" element={<ItemListContainer />}></Route>
-        <Route path="/item/:id" element={<ItemDetailContainer />}></Route>
-        <Route path="/*" element={404}></Route>
-      </Routes>
-    </BrowserRouter>
+    <CartProvider>
+      <BrowserRouter>
+        <Header title="Amor chiquito" />
+        <NavBar />
+        <Routes>
+          <Route path="/" element={<ItemListContainer />}></Route>
+          <Route path="/category/:id" element={<ItemListContainer />}></Route>
+          <Route path="/item/:id" element={<ItemDetailContainer />}></Route>
+          <Route path="/*" element={"404"}></Route>
+          <Route path="/checkout" element={<Checkout />}></Route>
+        </Routes>
+      </BrowserRouter>
+    </CartProvider>
   );
 }
 

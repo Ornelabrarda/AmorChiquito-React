@@ -1,0 +1,35 @@
+.item-card {
+  width: 18rem;
+  margin: 1rem 1rem;
+  border-color: rgb(236, 179, 144);
+  font-family: Kalam, cursive;
+}
+
+.title-card {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: rgb(236, 179, 144);
+}
+
+.car-text {
+  margin-bottom: 10px;
+  font-size: 1rem;
+}
+
+.cart-description {
+  color: #666;
+  font-family: helvetica;
+  font-size: 1.2rem;
+}
+
+.card-button {
+  background-color: rgb(236, 179, 144);
+  border-color: white;
+  font-family: helvetica;
+}
+
+.card-button:hover {
+  background-color: antiquewhite;
+  border-color: rgb(236, 179, 144);
+  color: rgb(236, 179, 144);
+}

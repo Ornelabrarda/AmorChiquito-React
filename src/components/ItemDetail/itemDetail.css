@@ -1,0 +1,24 @@
+.container-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1rem;
+}
+
+.card {
+  width: 30rem;
+  height: 60rem;
+}
+
+.card-title {
+  font-size: 3rem;
+  font-family: Kalam, cursive;
+  font-weight: bold;
+  color: rgb(236, 179, 144);
+}
+
+.card-text {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  font-family: Kalam, cursive;
+}

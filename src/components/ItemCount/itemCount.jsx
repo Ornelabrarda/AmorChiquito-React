@@ -1,19 +1,19 @@
-/* eslint-disable react/prop-types */
-import "./itemCount.css";
-import { useState, useContext } from "react";
 import { CartContext } from "../../context/cartContext";
+import "./itemCount.css";
+import { useContext, useState } from "react";
 
-export const ItemCount = () => {
+export const ItemCount = (item) => {
   const [quantity, setQuantity] = useState(1);
-  const addToCart = useContext(CartContext);
+  const { addToCart } = useContext(CartContext);
 
   const handleSumar = () => {
-    setQuantity((prev) => prev + 1);
+    setQuantity(quantity + 1);
   };
 
   const handleRestar = () => {
-    quantity > 1 && setQuantity((prev) => prev - 1);
+    quantity > 1 && setQuantity(quantity - 1);
   };
+
   return (
     <>
       <div className="item-count">
@@ -21,7 +21,12 @@ export const ItemCount = () => {
         <p>{quantity}</p>
         <button onClick={handleSumar}>+</button>
       </div>
-      <button className="agregar-al-carrito" onClick={addToCart}>
+      <button
+        className="agregar-al-carrito"
+        onClick={() => {
+          addToCart(item, quantity);
+        }}
+      >
         Agregar al carrito
       </button>
     </>

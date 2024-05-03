@@ -2,6 +2,7 @@ import { ItemCount } from "../ItemCount/itemCount";
 import { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
 import Card from "react-bootstrap/Card";
+import "./itemDetail.css";
 import data from "D:/Ornela/Desktop/vite-project/src/data/items.json";
 
 export const ItemDetail = () => {
@@ -23,70 +24,22 @@ export const ItemDetail = () => {
   if (!item) return null;
 
   return (
-    <div
-      style={{
-        display: "flex",
-        justifyContent: "center",
-        alignItems: "center",
-        marginTop: "1rem",
-      }}
-    >
-      <Card
-        style={{
-          width: "30rem",
-          height: "60rem",
-          borderColor: "rgb(236, 179, 144)",
-        }}
-      >
+    <div className="container-item">
+      <Card className="card">
         <Card.Img variant="top" src={item.pictureUrl} alt="card-image" />
         <Card.Body>
-          <Card.Title
-            style={{
-              fontSize: "3rem",
-              fontWeight: "bold",
-              fontFamily: "Kalam, cursive",
-              color: "rgb(236, 179, 144)",
-            }}
-          >
-            {item.title}
-          </Card.Title>
+          <Card.Title className="card-title">{item.title}</Card.Title>
+          <Card.Text className="card-text">{item.categoryId}</Card.Text>
           <Card.Text
             style={{
-              fontSize: "1.5rem",
-              marginBottom: "10px",
-              fontFamily: "Kalam, cursive",
-            }}
-          >
-            {item.categoryId}
-          </Card.Text>
-          <Card.Text
-            style={{
-              fontSize: "1.5rem",
               color: "#666",
               fontFamily: "helvetica",
             }}
           >
             {item.description}
           </Card.Text>
-          <Card.Text
-            style={{
-              fontSize: "1.5rem",
-              marginBottom: "10px",
-              fontFamily: "Kalam, cursive",
-            }}
-          >
-            {item.price}
-          </Card.Text>
-          <Card.Text
-            style={{
-              fontSize: "1.5rem",
-              marginBottom: "10px",
-              fontFamily: "Kalam, cursive",
-            }}
-          >
-            {item.stock}
-          </Card.Text>
-          <ItemCount />
+          <Card.Text>{item.price}</Card.Text>
+          <ItemCount item={item} />
         </Card.Body>
       </Card>
     </div>

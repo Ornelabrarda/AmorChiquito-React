@@ -5,7 +5,7 @@ export const ItemList = ({ items }) => {
   return (
     <div style={{ display: "flex", flexDirection: "row", flexWrap: "wrap" }}>
       {items.map((item) => (
-        <Item key={item.id} item={item} />
+        <Item item={item} key={item.id} />
       ))}
     </div>
   );
