@@ -4,6 +4,7 @@ import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import { CartWidget } from "../CartWidget/cartWidget";
 import "./NavBar.css";
+import { Cart } from "../Cart/cart";
 
 const NavBar = () => {
   return (

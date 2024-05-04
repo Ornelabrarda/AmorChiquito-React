@@ -1,7 +1,12 @@
 .Navbar {
-    background-color: rgb(236, 179, 144);
+  background-color: rgb(236, 179, 144);
 }
 
 a.nav-link {
-    color: rgb(252, 248, 232);
+  color: rgb(252, 248, 232);
+}
+
+.me-auto {
+  display: flex;
+  align-items: center;
 }

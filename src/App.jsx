@@ -6,7 +6,7 @@ import { ItemDetailContainer } from "./components/ItemDetailContainer/itemDetail
 import "bootstrap/dist/css/bootstrap.min.css";
 import "../src/App.css";
 import { CartProvider } from "./context/cartContext";
-import { Checkout } from "./components/Checkout/checkout";
+import { Cart } from "./components/Cart/cart";
 
 function App() {
   return (
@@ -18,8 +18,8 @@ function App() {
           <Route path="/" element={<ItemListContainer />}></Route>
           <Route path="/category/:id" element={<ItemListContainer />}></Route>
           <Route path="/item/:id" element={<ItemDetailContainer />}></Route>
+          <Route path="/cart" element={<Cart />}></Route>
           <Route path="/*" element={"404"}></Route>
-          <Route path="/checkout" element={<Checkout />}></Route>
         </Routes>
       </BrowserRouter>
     </CartProvider>
