@@ -12,7 +12,7 @@ export const Item = ({ item }) => {
         fontFamily: "Kalam, cursive",
       }}
     >
-      <Card.Img variant="top" src={item.pictureUrl} alt="card-image" />
+      <Card.Img variant="top" src={item.image} alt="card-image" />
       <Card.Body>
         <Card.Title
           style={{
@@ -23,11 +23,13 @@ export const Item = ({ item }) => {
         >
           {item.title}
         </Card.Title>
-        <Card.Text style={{ marginBottom: "10px" }}>{item.category}</Card.Text>
+        <Card.Text style={{ marginBottom: "10px" }}>
+          {item.categoryId}
+        </Card.Text>
         <Card.Text style={{ color: "#666", fontFamily: "helvetica" }}>
           {item.description}
         </Card.Text>
-        <Card.Text>{item.price}</Card.Text>
+        <Card.Text>${item.price}</Card.Text>
         <Link to={`/item/${item.id}`}>
           <Button
             style={{

@@ -1,26 +1,12 @@
+import { useContext } from "react";
 import { ItemCount } from "../ItemCount/itemCount";
-import { useState, useEffect } from "react";
-import { useParams } from "react-router-dom";
 import Card from "react-bootstrap/Card";
-import data from "D:/Ornela/Desktop/vite-project/src/data/items.json";
+import { CartContext } from "../../context/cartContext";
 
-export const ItemDetail = () => {
-  const [item, setItem] = useState(null);
-  const { id } = useParams();
+export const ItemDetail = ({ item }) => {
+  const { addToCart } = useContext(CartContext);
 
-  useEffect(() => {
-    // eslint-disable-next-line no-unused-vars
-    const get = new Promise((resolve, reject) => {
-      setTimeout(() => resolve(data), 2000);
-    });
-
-    get.then((data) => {
-      const findData = data.find((d) => d.id === Number(id));
-      setItem(findData);
-    });
-  }, [id]);
-
-  if (!item) return null;
+  const add = (quantity) => addToCart(item, quantity);
 
   return (
     <div
@@ -38,7 +24,7 @@ export const ItemDetail = () => {
           borderColor: "rgb(236, 179, 144)",
         }}
       >
-        <Card.Img variant="top" src={item.pictureUrl} alt="card-image" />
+        <Card.Img variant="top" src={item.image} alt="card-image" />
         <Card.Body>
           <Card.Title
             style={{
@@ -75,7 +61,7 @@ export const ItemDetail = () => {
               fontFamily: "Kalam, cursive",
             }}
           >
-            {item.price}
+            ${item.price}
           </Card.Text>
           <Card.Text
             style={{
@@ -84,32 +70,11 @@ export const ItemDetail = () => {
               fontFamily: "Kalam, cursive",
             }}
           >
-            {item.stock}
+            Stock:{item.stock}
           </Card.Text>
-          <ItemCount />
+          <ItemCount add={add} stock={item.stock} />
         </Card.Body>
       </Card>
     </div>
   );
 };
-
-/*import { getFirestore, getDoc, doc, query, where } from "firebase/firestore";
-
-export const ItemDetail = () => {
-  const [item, setItem] = useState(null);
-  const { id } = useParams();
-
-  useEffect(() => {
-    const db = getFirestore();
-
-    let refDoc;
-
-    if (!id) refDoc = doc(db, "items");
-    else {
-      refDoc = query(doc(db, "items", id), where("id", "==", id));
-    }
-
-    getDoc(refDoc).then((snapshot) => {
-      setItem({ id: snapshot.id, ...snapshot.data() });
-    });
-  }, [id]);*/

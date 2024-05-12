@@ -1,9 +1,10 @@
 .cartWidget {
-    font-size: 20px;
-    font-family: "Varela Round", sans-serif;
-    color: rgb(252, 248, 232);
-    display: flex;
+  font-size: 20px;
+  font-family: "Varela Round", sans-serif;
+  color: rgb(252, 248, 232);
+  display: flex;
 }
 
-
-  
+.menu-link {
+  color: rgb(252, 248, 232);
+}
