@@ -14,7 +14,7 @@ export const ItemDetail = ({ item }) => {
         display: "flex",
         justifyContent: "center",
         alignItems: "center",
-        marginTop: "1rem",
+        padding: "1rem 1rem",
       }}
     >
       <Card

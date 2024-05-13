@@ -1,4 +1,6 @@
 .ItemListContainer {
-    background-color: rgb(254, 246, 228);
-    color: rgb(148, 180, 159);
+  background-color: rgb(254, 246, 228);
+  color: rgb(148, 180, 159);
+  height: 100%;
+  width: 100%;
 }

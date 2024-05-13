@@ -23,9 +23,7 @@ export const Item = ({ item }) => {
         >
           {item.title}
         </Card.Title>
-        <Card.Text style={{ marginBottom: "10px" }}>
-          {item.categoryId}
-        </Card.Text>
+        <Card.Text style={{ marginBottom: "10px" }}>{item.category}</Card.Text>
         <Card.Text style={{ color: "#666", fontFamily: "helvetica" }}>
           {item.description}
         </Card.Text>
@@ -35,7 +33,7 @@ export const Item = ({ item }) => {
             style={{
               backgroundColor: "rgb(236, 179, 144)",
               borderColor: "white",
-              ontFamily: "helvetica",
+              fontFamily: "helvetica",
             }}
           >
             Ver producto

@@ -3,6 +3,7 @@ import { useContext, useState } from "react";
 import { CartContext } from "../../context/cartContext";
 import { collection, addDoc } from "firebase/firestore";
 import { db } from "../../main";
+import "./Checkout.css";
 
 export const Checkout = () => {
   const [orderId, setOrderId] = useState("");
@@ -30,8 +31,8 @@ export const Checkout = () => {
   if (orderId) {
     return (
       <>
-        <h1>Gracias por su compra</h1>
-        <p>Su número de pedido es: {orderId}</p>
+        <h1 className="compra">Gracias por su compra!</h1>
+        <p className="pedido">Su número de pedido es: {orderId}</p>
       </>
     );
   }
@@ -56,9 +57,7 @@ export const Checkout = () => {
           {...register("telefono")}
         />
 
-        <button className="comprar" type="submit">
-          comprar
-        </button>
+        <button type="submit">comprar</button>
       </form>
     </div>
   );

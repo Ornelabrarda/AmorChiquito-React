@@ -17,5 +17,9 @@ export const ItemDetailContainer = () => {
 
   if (!item) return null;
 
-  return <ItemDetail item={item} />;
+  return (
+    <div style={{ backgroundColor: "rgb(254, 246, 228)" }}>
+      <ItemDetail item={item} />
+    </div>
+  );
 };
